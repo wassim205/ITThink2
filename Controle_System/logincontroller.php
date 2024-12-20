@@ -34,7 +34,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["Login"])) {
             $_SESSION['email'] = $email;
             $_SESSION['role'] = $user['Role'];
 
-            header("Location: Dashboard.php");
+            if ($user["Role"] === "Admin") {
+               header("Location: Dashboard.php");
+               } else {
+                header("Location: userDashboard.php");
+            }
             exit;
         } else {
             $errors['login'] = 'Incorrect email or password.';

@@ -13,7 +13,6 @@ require_once './Controle_System/UserDashboardController.php';
 
 <body class="bg-gray-100 h-screen">
     <div class="flex h-full">
-        <!-- Sidebar -->
         <aside class="w-64 bg-blue-600 text-white hidden md:block">
             <div class="p-4">
                 <h1 class="text-2xl font-bold">Welcome, <?php echo $username; ?></h1>
@@ -29,16 +28,12 @@ require_once './Controle_System/UserDashboardController.php';
                     <li><a href="#"
                             class="flex items-center gap-2 text-sm hover:bg-blue-500 p-2 rounded"><span>📋</span>
                             Notifications</a></li>
-                    <li><a href="#"
-                            class="flex items-center gap-2 text-sm hover:bg-blue-500 p-2 rounded"><span>⚙️</span>
-                            Settings</a></li>
+                    
                 </ul>
             </nav>
         </aside>
 
-        <!-- Main Content -->
         <div class="flex-1 flex flex-col">
-            <!-- Header -->
             <header class="bg-white shadow-md p-4 flex justify-between items-center">
                 <h2 class="text-lg font-bold text-gray-800">Your Dashboard</h2>
                 <div class="flex items-center space-x-4">
@@ -47,25 +42,23 @@ require_once './Controle_System/UserDashboardController.php';
                 </div>
             </header>
 
-            <!-- Main -->
             <main class="p-6 flex-1 overflow-y-auto">
-                <!-- Statistics -->
+              
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-white p-6 rounded-lg shadow-md">
                         <h3 class="text-sm text-gray-500">Projects In Progress</h3>
-                        <p class="text-2xl font-bold"><?php echo $projects_in_progress; ?></p>
+                        <p class="text-2xl font-bold"></p>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md">
                         <h3 class="text-sm text-gray-500">Completed Projects</h3>
-                        <p class="text-2xl font-bold"><?php echo $completed_projects; ?></p>
+                        <p class="text-2xl font-bold"></p>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md">
                         <h3 class="text-sm text-gray-500">Notifications</h3>
-                        <p class="text-2xl font-bold"><?php echo $notifications_count; ?></p>
+                        <p class="text-2xl font-bold"></p>
                     </div>
                 </div>
 
-                <!-- Recent Activity -->
                 <div class="mt-6 bg-white rounded-lg shadow-md">
                     <h3 class="text-lg font-bold p-4">Your Projects</h3>
                     <table class="w-full text-left border-collapse">

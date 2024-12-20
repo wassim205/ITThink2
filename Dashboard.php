@@ -20,9 +20,9 @@ require_once './Controle_System/DashboardController.php';
             <nav>
                 <ul class="space-y-4 p-4">
                     <li><a href="#"
-                            class="flex items-center gap-2 text-sm hover:bg-blue-500 p-2 rounded"><span>🏠</span>
+                            class="flex items-center font-bold gap-2 text-sm hover:bg-blue-500 p-2 rounded"><span>🏠</span>
                             Home</a></li>
-                    <li><a href="#"
+                    <li><a href="userManaging.php"
                             class="flex items-center gap-2 text-sm hover:bg-blue-500 p-2 rounded"><span>📋</span>
                             Users</a></li>
                     <li><a href="#"

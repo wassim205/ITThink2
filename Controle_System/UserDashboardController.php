@@ -22,6 +22,4 @@ try {
     echo "Error fetching user information: " . $e->getMessage();
     exit;
 }
-
-echo "Welcome, " . $username . "!";
 ?>

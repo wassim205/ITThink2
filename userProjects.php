@@ -19,11 +19,11 @@ require_once './Controle_System/UserDashboardController.php';
             </div>
             <nav>
                 <ul class="space-y-4 p-4">
-                    <li><a href="#"
-                            class="flex items-center font-bold gap-2 text-sm hover:bg-blue-500 p-2 rounded"><span>🏠</span>
+                    <li><a href="./userDashboard.php"
+                            class="flex items-center gap-2 text-sm hover:bg-blue-500 p-2 rounded"><span>🏠</span>
                             Dashboard</a></li>
-                    <li><a href="userProjects.php"
-                            class="flex items-center gap-2 text-sm hover:bg-blue-500 p-2 rounded"><span>📁</span>
+                    <li><a href="#"
+                            class="flex items-center gap-2 font-bold text-sm hover:bg-blue-500 p-2 rounded"><span>📁</span>
                             My Projects</a></li>
                     <li><a href="#"
                             class="flex items-center gap-2 text-sm hover:bg-blue-500 p-2 rounded"><span>📋</span>
@@ -43,8 +43,6 @@ require_once './Controle_System/UserDashboardController.php';
             </header>
 
             <main class="p-6 flex-1 overflow-y-auto">
-              
-            
 
                 <div class="mt-6 bg-white rounded-lg shadow-md">
                     <h3 class="text-lg font-bold p-4">Your Projects</h3>
